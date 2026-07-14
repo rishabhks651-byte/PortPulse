@@ -13,3 +13,4 @@ PortPulse is a high-performance, multi-threaded network diagnostics tool designe
 1. Install the required dependencies:
    ```bash
    pip install customtkinter
+   pip install tqdm
