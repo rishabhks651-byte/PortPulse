@@ -1,0 +1,9 @@
+tqdm>=4.0.0
+# While ipaddress is standard library (Python 3.3+), explicitly listing it ensures compatibility if running in a restricted environment.
+# However, modern Python environments should have it available automatically.
+# If we were adding external DNS libraries or advanced networking tools:
+# requests==2.31.0 # For potential HTTP banner grabbing fallback
+# scapy==2.x.x # For true raw packet crafting (highly recommended for full implementation)
+
+# Since the core logic relies heavily on standard Python networking and IP handling, 
+# we primarily need a library for visual feedback to achieve the "good UX".
