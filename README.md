@@ -14,3 +14,18 @@ PortPulse is a high-performance, multi-threaded network diagnostics tool designe
    ```bash
    pip install customtkinter
    pip install tqdm
+   
+## 📚 Core Command Examples
+
+    Basic Full Scan:
+
+    python portpulse_main.py -sS -sV scanme.nmap.org
+
+    Scan a Range with Specific Ports and Versioning:
+
+    python portpulse_main.py 192.168.0.0/24 -p 80,443 --version-intensity 5 -oN results.txt
+
+    Perform Ping Sweep only:
+
+    python portpulse_main.py scanme.nmap.org -sn
+
